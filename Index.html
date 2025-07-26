@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- > Declares the document type and version of HTML (HTML5) -->
+<html lang="en">
+<!-- Starts the HTML document and sets the language to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8, which supports all characters -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the website responsive by controlling layout on different screen sizes -->
+    
+    <title>Student Form</title>
+    <!-- Sets the title of the page (appears in browser tab) -->
+</head>
+
+<body>
+    <!-- Start of the body content visible on the page -->
+
+    <h1><b>Form</b></h1>
+    <!-- Main heading of the page -->
+
+    <form>
+        <!-- Start of the form -->
+
+        <!-- Label and input for Name -->
+        <label for="name">Name: </label>
+        <!-- Associates the label with the input whose id is "name" -->
+        <input id="name" type="text" placeholder="Enter your name" />
+        <!-- Text input field for name with a placeholder -->
+        <br><br>
+
+        <!-- Label and input for Email -->
+        <label for="email">Email: </label>
+        <input id="email" type="email" placeholder="Enter your email" />
+        <!-- Email input field with validation -->
+        <br><br>
+
+        <!-- Label and input for Roll Number -->
+        <label for="roll">Roll No: </label>
+        <input id="roll" type="number" placeholder="Enter your roll number" />
+        <!-- Number input field for roll number -->
+        <br><br>
+
+        <!-- Label and input for Date of Birth -->
+        <label for="date">Date of Birth: </label>
+        <input id="date" type="date" />
+        <!-- Date input field -->
+        <br><br>
+
+        <!-- Label and textarea for Address -->
+        <label for="address">Address:</label><br>
+        <textarea id="address" rows="4" cols="40" placeholder="Enter your address here"></textarea>
+        <!-- Multiline text area for address -->
+        <br><br>
+
+        <!-- Dropdown selection for class -->
+        <label for="class">Class:</label>
+        <select id="class">
+            <option value="sem1">Sem 1</option>
+            <option value="sem2">Sem 2</option>
+            <option value="sem3">Sem 3</option>
+        </select>
+        <!-- Dropdown menu with semester options -->
+        <br><br>
+
+        <!-- Input with datalist for favorite subject -->
+        <label for="subject">Favorite Subject:</label>
+        <input id="subject" list="subjects" placeholder="Choose or type" />
+        <datalist id="subjects">
+            <option value="DSA">
+            <option value="MERN">
+            <option value="Java">
+        </datalist>
+        <!-- Allows user to select from or type a subject -->
+        <br><br>
+
+        <!-- Radio buttons for gender selection -->
+        <label>Gender: </label><br>
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+        <input type="radio" name="gender" value="others" /> Others
+        <!-- Radio buttons allow selection of only one option (same 'name') -->
+        <br><br>
+
+        <!-- Checkboxes for hobbies -->
+        <label>Hobbies:</label><br>
+        <input type="checkbox" value="coding" /> Coding
+        <input type="checkbox" value="running" /> Running
+        <input type="checkbox" value="reading" /> Reading
+        <!-- Checkboxes allow multiple selections -->
+        <br><br>
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+        <!-- Button to submit the form -->
+
+    </form>
+    <!-- End of form -->
+</body>
+
+</html>
